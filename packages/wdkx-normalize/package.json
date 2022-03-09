@@ -1,5 +1,5 @@
 {
-  "name": "@wdkx/wdkx-normalize",
+  "name": "@wdkx/normalize-react",
   "version": "1.0.0",
   "description": "WDKX normalize style for react",
   "keywords": [
@@ -7,13 +7,9 @@
     "style"
   ],
   "author": "yzha5 <yzha5@163.com>",
-  "homepage": "http://react.weidukexue.com/normalize",
+  "homepage": "https://react.weidukexue.com",
   "license": "ISC",
   "main": "lib/wdkx-normalize.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
   "files": [
     "lib"
   ],
@@ -22,12 +18,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yzha5/wdkx-normalize-react.git"
+    "url": "git+https://github.com/yzha5/wdkx-react.git",
+    "directory": "packages/wdkx-normalize"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
-    "url": "https://github.com/yzha5/wdkx-normalize-react/issues"
+    "url": "https://github.com/yzha5/wdkx-react/issues"
   }
 }

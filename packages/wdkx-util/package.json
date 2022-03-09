@@ -6,7 +6,7 @@
     "tool"
   ],
   "author": "yzha5 <yzha5@163.com>",
-  "homepage": "http://react.weidukexue.com/util",
+  "homepage": "https://react.weidukexue.com/util",
   "license": "ISC",
   "main": "lib/wdkx-util.js",
   "directories": {
