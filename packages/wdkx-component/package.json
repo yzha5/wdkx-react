@@ -1,0 +1,33 @@
+{
+  "name": "@wdkx/wdkx-component",
+  "version": "1.0.0",
+  "description": "WDKX component library for react",
+  "keywords": [
+    "library",
+    "component"
+  ],
+  "author": "yzha5 <yzha5@163.com>",
+  "homepage": "https://react.weidukexue.com/component",
+  "license": "ISC",
+  "main": "lib/wdkx-component.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yzha5/wdkx-component-react.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/yzha5/wdkx-component-react/issues"
+  }
+}
