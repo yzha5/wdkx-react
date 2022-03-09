@@ -1,0 +1,26 @@
+{
+  "name": "@wdkx/wdkx-color",
+  "version": "1.0.0",
+  "description": "Color tool",
+  "author": "yzha5 <yzha5@163.com>",
+  "homepage": "https://react.weidukexue.com",
+  "license": "MIT",
+  "main": "lib/wdkx-color.js",
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yzha5/wdkx-react.git",
+    "directory": "packages/wdkx-color"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/yzha5/wdkx-react/issues"
+  }
+}
