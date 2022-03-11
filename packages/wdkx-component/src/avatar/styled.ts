@@ -17,7 +17,7 @@ export default styled.span<AvatarStyleProps>(
             alignItems: 'center',
             overflow: 'hidden',
             backgroundColor: c.value,
-            color: c.text().value,
+            color: color ? c.text().value : 'inherit',
             fontSize: `${s / 3}rem`,
             fontWeight: 500,
             width: `${s}rem`,

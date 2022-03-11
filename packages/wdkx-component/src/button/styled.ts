@@ -37,7 +37,7 @@ export default styled.button<ButtonStyleProps>(
             ? theme.palette.disabled.text
             : mode === 'filled'
             ? c.text().value
-            : newColor.dark().value
+            : 'inherit'
 
         //component border color
         const borderColor = disabled ? theme.palette.disabled.border : c.value
