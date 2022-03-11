@@ -1,5 +1,5 @@
 import { ComponentProps } from '@wdkx/types-react'
-import { LabelHTMLAttributes } from 'react'
+import { HTMLAttributes } from 'react'
 
 export interface NumberFieldContainerStyleProps
     extends Pick<ComponentProps, 'fluid'> {}
@@ -12,7 +12,7 @@ export interface NumberFieldStyleProps
 
 export interface NumberFieldProps
     extends Omit<
-            LabelHTMLAttributes<HTMLInputElement>,
+            HTMLAttributes<HTMLInputElement>,
             'color' | 'size' | 'type' | 'step'
         >,
         Pick<ComponentProps, 'fluid'>,

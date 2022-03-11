@@ -11,7 +11,7 @@ export const StyledNumberFieldContainer =
         }
     })
 
-export const StyledNumberField = styled.label<NumberFieldStyleProps>(
+export const StyledNumberField = styled.div<NumberFieldStyleProps>(
     ({
         color = 'secondary',
         size = 2.5,
@@ -119,7 +119,7 @@ export const StyledNumberField = styled.label<NumberFieldStyleProps>(
                         ? ShadowWithColor(c.value!)
                         : undefined,
             },
-            '&:focus-within:not(button)': {
+            '&:focus-within': {
                 borderColor: !disabled ? c.active().value : undefined,
                 boxShadow:
                     !disabled && shadowed && shadowOnInteract

@@ -120,7 +120,7 @@ export default function ({
                         <Minus />
                     </button>
                 </StyledElement>
-                <div aria-label='text-field-instance'>
+                <label aria-label='text-field-instance'>
                     {label && <div aria-label='text-field-label'>{label}</div>}
                     <input
                         ref={ref}
@@ -129,7 +129,7 @@ export default function ({
                         disabled={disabled}
                         {...rest}
                     />
-                </div>
+                </label>
                 <StyledElement>
                     <button
                         onClick={() => computePlus()} //点击时执行加法运算
