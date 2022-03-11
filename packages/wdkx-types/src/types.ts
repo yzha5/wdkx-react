@@ -90,6 +90,9 @@ export interface ComponentProps {
     // 全宽
     fluid?: boolean
 
+    // 悬浮
+    float?: boolean
+
     // 选中状态
     selected?: boolean
 
