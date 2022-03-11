@@ -1,0 +1,292 @@
+export function Logo({ color = 'currentColor' }: { color?: string }) {
+    return (
+        <svg
+            viewBox='0 0 240 240'
+            fill='none'
+            xmlns='http://www.w3.org/2000/svg'
+        >
+            <path
+                d='M120 40L165.9 9.10001L176.6 63.4L230.9 74.1L200 120L230.9 165.9L176.6 176.6L165.9 230.9L120 200L74.1 230.9L63.4 176.6L9.09998 165.9L40 120L9.09998 74.1L63.4 63.4L74.1 9.10001L120 40Z'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M100.9 73.8L120 40L139.1 73.8L176.6 63.4L166.2 100.9L200 120L166.2 139.1L176.6 176.6L139.1 166.2L120 200L100.9 166.2L63.4 176.6L73.8 139.1L40 120L73.8 100.9L63.4 63.4L100.9 73.8Z'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M85.2 5.20001L120 40L154.8 5.20001'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M143.4 2.29999L120 40L96.6 2.29999'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M108.2 0.600006L120 40L131.8 0.600006'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M176.6 14.2V63.4H225.8'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M219.8 53.3L176.6 63.4L186.7 20.2'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M196.1 27.2L176.6 63.4L212.8 43.9'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M234.8 85.2L200 120L234.8 154.8'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M237.7 143.4L200 120L237.7 96.6'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M239.4 108.2L200 120L239.4 131.8'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M225.8 176.6H176.6V225.8'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M186.7 219.8L176.6 176.6L219.8 186.7'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M212.8 196.1L176.6 176.6L196.1 212.8'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M154.8 234.8L120 200L85.2 234.8'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M96.6 237.7L120 200L143.4 237.7'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M131.8 239.4L120 200L108.2 239.4'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M63.4 225.8V176.6H14.2'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M20.2 186.7L63.4 176.6L53.3 219.8'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M43.9 212.8L63.4 176.6L27.2 196.1'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M5.20001 154.8L40 120L5.20001 85.2'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M2.29999 96.6L40 120L2.29999 143.4'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M0.599976 131.8L40 120L0.599976 108.2'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M14.2 63.4H63.4V14.2'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M53.3 20.2L63.4 63.4L20.2 53.3'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M27.2 43.9L63.4 63.4L43.9 27.2'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M69.2 58.2L100.9 73.8L112.2 40.4'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M104.4 41.5L100.9 73.8L75.6 53.5'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M82.3 49.4L100.9 73.8L96.8 43.4'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M127.8 40.4L139.1 73.8L170.8 58.2'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M164.4 53.5L139.1 73.8L135.6 41.5'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M143.2 43.4L139.1 73.8L157.7 49.4'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M181.8 69.2L166.2 100.9L199.6 112.2'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M198.5 104.4L166.2 100.9L186.5 75.6'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M190.6 82.3L166.2 100.9L196.6 96.8'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M199.6 127.8L166.2 139.1L181.8 170.8'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M186.5 164.4L166.2 139.1L198.5 135.6'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M196.6 143.2L166.2 139.1L190.6 157.7'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M170.8 181.8L139.1 166.2L127.8 199.6'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M135.6 198.5L139.1 166.2L164.4 186.5'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M157.7 190.6L139.1 166.2L143.2 196.6'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M112.2 199.6L100.9 166.2L69.2 181.8'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M75.6 186.5L100.9 166.2L104.4 198.5'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M96.8 196.6L100.9 166.2L82.3 190.6'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M58.2 170.8L73.8 139.1L40.4 127.8'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M41.5 135.6L73.8 139.1L53.5 164.4'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M49.4 157.7L73.8 139.1L43.4 143.2'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M40.4 112.2L73.8 100.9L58.2 69.2'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M53.5 75.6L73.8 100.9L41.5 104.4'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M43.4 96.8L73.8 100.9L49.4 82.3'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path d='M120 0V240' stroke={color} strokeMiterlimit='10' />
+            <path d='M0 120H240' stroke={color} strokeMiterlimit='10' />
+            <path
+                d='M230.9 165.9L9.09998 74.1'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M9.09998 165.9L230.9 74.1'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M35.1 204.9L204.9 35.1'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M74.1 9.10001L165.9 230.9'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M204.9 204.9L35.1 35.1'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+            <path
+                d='M165.9 9.10001L74.1 230.9'
+                stroke={color}
+                strokeMiterlimit='10'
+            />
+        </svg>
+    )
+}
