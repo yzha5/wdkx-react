@@ -1,47 +1,55 @@
 {
-  "name": "@wdkx/color",
-  "version": "1.0.1",
-  "description": "Color tool",
-  "author": "yzha5 <yzha5@163.com>",
-  "homepage": "https://react.weidukexue.com",
-  "license": "MIT",
-  "main": "./lib/cjs/index.js",
-  "module": "./lib/esm/index.js",
-  "types": "./lib/index.d.ts",
-  "files": [
-    "lib"
-  ],
-  "publishConfig": {
-    "access": "public",
-    "directory": "lib"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yzha5/wdkx-react.git",
-    "directory": "packages/wdkx-color"
-  },
-  "scripts": {
-    "build": "rollup -c",
-    "test": "echo \"Error: run tests from root\" && exit 1"
-  },
-  "bugs": {
-    "url": "https://github.com/yzha5/wdkx-react/issues"
-  },
-  "peerDependencies": {
-    "color": "^4.2.1"
-  },
-  "devDependencies": {
-    "@rollup/plugin-commonjs": "^21.0.2",
-    "@rollup/plugin-node-resolve": "^13.1.3",
-    "@types/color": "^3.0.3",
-    "@types/rollup-plugin-json": "^3.0.3",
-    "@types/rollup-plugin-peer-deps-external": "^2.2.1",
-    "prettier": "^2.5.1",
-    "rollup-plugin-dts": "^4.2.0",
-    "rollup-plugin-json": "^4.0.0",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-typescript2": "^0.31.2",
-    "typescript": "^4.6.2"
-  }
+    "name": "@wdkx/color",
+    "version": "1.0.1",
+    "description": "Color tool",
+    "author": "yzha5 <yzha5@163.com>",
+    "homepage": "https://react.weidukexue.com",
+    "license": "MIT",
+    "main": "./lib/cjs/index.js",
+    "module": "./lib/esm/index.js",
+    "types": "./lib/index.d.ts",
+    "files": [
+        "lib"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yzha5/wdkx-react.git",
+        "directory": "packages/wdkx-color"
+    },
+    "scripts": {
+        "build": "rm -rf lib && rollup -c",
+        "local:lib": "rm -rf local_lib && mkdir local_lib && cp -r lib local_lib/lib && cp package.json local_lib/package.json",
+        "test": "jest",
+        "test:coverage": "jest --coverage"
+    },
+    "bugs": {
+        "url": "https://github.com/yzha5/wdkx-react/issues"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^21.0.2",
+        "@rollup/plugin-node-resolve": "^13.1.3",
+        "@types/jest": "^27.4.1",
+        "@types/rollup-plugin-json": "^3.0.3",
+        "@types/rollup-plugin-peer-deps-external": "^2.2.1",
+        "jest": "^27.5.1",
+        "rollup-plugin-dts": "^4.2.0",
+        "rollup-plugin-json": "^4.0.0",
+        "rollup-plugin-peer-deps-external": "^2.2.4",
+        "rollup-plugin-terser": "^7.0.2",
+        "rollup-plugin-typescript2": "^0.31.2",
+        "ts-jest": "^27.1.3",
+        "typescript": "^4.6.2"
+    },
+    "peerDependencies": {
+        "@types/color": "^3.0.3",
+        "color": "^4.2.1"
+    },
+    "peerDependenciesMeta": {
+        "@types/color": {
+            "optional": true
+        }
+    }
 }
