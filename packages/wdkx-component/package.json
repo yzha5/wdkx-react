@@ -1,44 +1,60 @@
 {
-  "name": "@wdkx/component-react",
-  "version": "1.0.1",
-  "description": "Components library for react",
-  "keywords": [
-    "library",
-    "component"
-  ],
-  "author": "yzha5 <yzha5@163.com>",
-  "homepage": "https://react.weidukexue.com",
-  "license": "MIT",
-  "main": "./lib/cjs/index.js",
-  "module": "./lib/esm/index.js",
-  "types": "./lib/index.d.ts",
-  "files": [
-    "lib"
-  ],
-  "publishConfig": {
-    "access": "public",
-    "directory": "lib"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yzha5/wdkx-react.git",
-    "directory": "packages/wdkx-component"
-  },
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
-  },
-  "bugs": {
-    "url": "https://github.com/yzha5/wdkx-react/issues"
-  },
-  "devDependencies": {
-    "@rollup/plugin-commonjs": "^21.0.2",
-    "@rollup/plugin-node-resolve": "^13.1.3",
-    "prettier": "^2.5.1",
-    "rollup-plugin-dts": "^4.2.0",
-    "rollup-plugin-json": "^4.0.0",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-typescript2": "^0.31.2",
-    "typescript": "^4.6.2"
-  }
+    "name": "@wdkx/component-react",
+    "version": "1.0.1",
+    "description": "Components library for react",
+    "keywords": [
+        "library",
+        "component"
+    ],
+    "author": "yzha5 <yzha5@163.com>",
+    "homepage": "https://react.weidukexue.com",
+    "license": "MIT",
+    "main": "./lib/cjs/index.js",
+    "module": "./lib/esm/index.js",
+    "types": "./lib/index.d.ts",
+    "files": [
+        "lib"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yzha5/wdkx-react.git",
+        "directory": "packages/wdkx-component"
+    },
+    "scripts": {
+        "build": "rm -rf lib && rollup -c",
+        "test": "echo \"Error: run tests from root\" && exit 1"
+    },
+    "bugs": {
+        "url": "https://github.com/yzha5/wdkx-react/issues"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^21.0.2",
+        "@rollup/plugin-node-resolve": "^13.1.3",
+        "rollup-plugin-dts": "^4.2.0",
+        "rollup-plugin-json": "^4.0.0",
+        "rollup-plugin-peer-deps-external": "^2.2.4",
+        "rollup-plugin-terser": "^7.0.2",
+        "rollup-plugin-typescript2": "^0.31.2",
+        "typescript": "^4.6.2"
+    },
+    "peerDependencies": {
+        "@emotion/react": "^11.8.2",
+        "@emotion/styled": "^11.8.1"
+    },
+    "peerDependenciesMeta": {
+        "@emotion/react": {
+            "optional": true
+        },
+        "@emotion/styled": {
+            "optional": true
+        }
+    },
+    "dependencies": {
+        "@wdkx/theme-react": "^1.0.1",
+        "@wdkx/types-react": "^1.0.0",
+        "@wdkx/util-react": "^1.0.1"
+    }
 }
