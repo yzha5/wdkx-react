@@ -39,7 +39,7 @@
     - [ ] `Editor` 富文本编辑器
     - [x] `Folding` 折叠面板
     - [x] `Grid` 栅格
-    - [ ] `Input` 输入框
+    - [x] `Input` 输入框
     - [x] `List` 列表
     - [ ] `Loading` 加载
     - [ ] `Modal` 模态框

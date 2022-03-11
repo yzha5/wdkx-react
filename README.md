@@ -39,7 +39,7 @@
     - [ ] `Editor`
     - [x] `Folding`
     - [x] `Grid`
-    - [ ] `Input`
+    - [x] `Input`
     - [x] `List`
     - [ ] `Loading`
     - [ ] `Modal`
