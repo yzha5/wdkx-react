@@ -58,7 +58,7 @@
     - [ ] `Switch`
     - [ ] `Tab`
     - [ ] `Table`
-    - [ ] `TextField`
+    - [x] `TextField`
     - [ ] `Toast`
     - [ ] `Toolbar`
     - [ ] `Tooltip`
