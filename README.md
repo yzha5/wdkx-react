@@ -44,7 +44,7 @@
     - [ ] `Loading`
     - [ ] `Modal`
     - [ ] `Navbar`
-    - [ ] `NumberField`
+    - [x] `NumberField`
     - [ ] `Pagination`
     - [ ] `Popover`
     - [ ] `Progress`

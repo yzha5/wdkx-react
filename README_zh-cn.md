@@ -44,7 +44,7 @@
     - [ ] `Loading` 加载
     - [ ] `Modal` 模态框
     - [ ] `Navbar` 导航条
-    - [ ] `NumberField` 数字输入框
+    - [x] `NumberField` 数字输入框
     - [ ] `Pagination` 分页
     - [ ] `Popover` 弹出框
     - [ ] `Progress` 进度条
