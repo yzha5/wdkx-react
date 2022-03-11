@@ -1,13 +1,17 @@
 # `wdkx-icon`
 
-> icons
+> 图标
 
-## Install
+现在图标**204**个，更多图标正在设计开发中
+
+[获取figma设计文件]()
+
+## 安装
 ```
 npm i @wdkx/icon-react
 ```
 
-## Usage
+## 使用
 
 ```tsx
 import {Airplane} from "@wdkx/icon-react"

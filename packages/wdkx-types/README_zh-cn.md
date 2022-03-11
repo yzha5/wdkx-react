@@ -1,14 +1,14 @@
-# `wdkx-types`
+# `@wdkx/types-react`
 
-> Types for typescript
+> typescript类型
 
-## Install
+## 安装
 
 ```
 npm i @wdkx/types-react
 ```
 
-## Usage
+## 使用
 
 ```ts
 import {ComponentColor} from "@wdkx/types-react"

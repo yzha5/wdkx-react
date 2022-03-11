@@ -1,14 +1,14 @@
 # `@wdkx/util-react`
 
-> Utils
+> 工具
 
-## Install
+## 安装
 
 ```
 npm i @wdkx/util-react
 ```
 
-## Usage
+## 使用
 
 ```ts
 import {DeepMerge} from "@wdkx/util-react"

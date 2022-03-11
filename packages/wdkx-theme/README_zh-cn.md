@@ -1,14 +1,14 @@
 # `wdkx-theme`
 
-> theming
+> 主题
 
-## Install
+## 安装
 
 ```
 npm i @wdkx/theme-react
 ```
 
-## Usage
+## 使用
 
 ```tsx
 import {ThemeProvider, useTheme} from "@wdkx/theme-react"
@@ -23,6 +23,6 @@ function App() {
 
 function testUseTheme() {
     const theme = useTheme()
-    console.log(theme.palette.primary.value)//Print primary color value
+    console.log(theme.palette.primary.value)//打印 primary 颜色的值
 }
 ```

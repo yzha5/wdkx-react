@@ -1,14 +1,14 @@
 # `@wdkx/color`
 
-> Theme color tool
+> 主题颜色工具
 
-## Install
+## 安装
 
 ```
 npm i @wdkx/color
 ```
 
-## Usage
+## 使用
 
 ```ts
 import {InitColor} from '@wdkx/color'

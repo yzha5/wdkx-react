@@ -1,11 +1,5 @@
 # `wdkx-document`
 
-> TODO: description
+> documentation
 
-## Usage
-
-```
-const wdkxDocument = require('wdkx-document');
-
-// TODO: DEMONSTRATE API
-```
+Documentation size is coming soon!

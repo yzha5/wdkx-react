@@ -1,11 +1,9 @@
 # `wdkx-template`
 
-> TODO: description
+> TODO: 开发中...
 
-## Usage
+## 使用
 
-```
-const wdkxTemplate = require('wdkx-template');
+```tsx
 
-// TODO: DEMONSTRATE API
 ```
