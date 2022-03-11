@@ -60,7 +60,7 @@
     - [ ] `Table`
     - [x] `TextField`
     - [ ] `Toast`
-    - [ ] `Toolbar`
+    - [x] `Toolbar`
     - [ ] `Tooltip`
     - [ ] `Tree`
     - [ ] `Uploader`

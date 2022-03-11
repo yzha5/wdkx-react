@@ -60,7 +60,7 @@
     - [ ] `Table` 表格
     - [x] `TextField` 文本输入框
     - [ ] `Toast` 消息条
-    - [ ] `Toolbar` 工具条
+    - [x] `Toolbar` 工具条
     - [ ] `Tooltip` 提示框
     - [ ] `Tree` 树形列表
     - [ ] `Uploader` 上传组件
