@@ -40,7 +40,7 @@
     - [x] `Folding` 折叠面板
     - [x] `Grid` 栅格
     - [ ] `Input` 输入框
-    - [ ] `List` 列表
+    - [x] `List` 列表
     - [ ] `Loading` 加载
     - [ ] `Modal` 模态框
     - [ ] `Navbar` 导航条

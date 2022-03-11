@@ -40,7 +40,7 @@
     - [x] `Folding`
     - [x] `Grid`
     - [ ] `Input`
-    - [ ] `List`
+    - [x] `List`
     - [ ] `Loading`
     - [ ] `Modal`
     - [ ] `Navbar`
