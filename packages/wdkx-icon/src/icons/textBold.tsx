@@ -1,0 +1,7 @@
+import {SvgProps} from '../types'
+export function TextBold({color = 'currentColor', size = '100%'}:SvgProps) {
+return (<svg width={size} height={size} viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
+<path d="M3 0.5H8.5C10.433 0.5 12 2.067 12 4V4C12 5.933 10.433 7.5 8.5 7.5H3V0.5Z" stroke={color} strokeLinejoin="round"/>
+<path d="M3 7.5H9C11.2091 7.5 13 9.29086 13 11.5V11.5C13 13.7091 11.2091 15.5 9 15.5H3V7.5Z" stroke={color} strokeLinejoin="round"/>
+
+</svg>)}

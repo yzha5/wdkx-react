@@ -1,0 +1,8 @@
+import {SvgProps} from '../types'
+export function TextStrikethrough({color = 'currentColor', size = '100%'}:SvgProps) {
+return (<svg width={size} height={size} viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
+<path d="M12.5 4.25C12.5 2.17893 10.4853 0.5 8 0.5C5.51472 0.5 3.5 2.17893 3.5 4.25C3.5 6.32107 5.51472 8 8 8" stroke={color} strokeLinejoin="round"/>
+<path d="M3.5 11.75C3.5 13.8211 5.51472 15.5 8 15.5C10.4853 15.5 12.5 13.8211 12.5 11.75C12.5 9.67893 10.4853 8 8 8" stroke={color} strokeLinejoin="round"/>
+<path d="M2 8H14" stroke={color} strokeLinejoin="round"/>
+
+</svg>)}

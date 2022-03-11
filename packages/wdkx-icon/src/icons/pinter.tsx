@@ -1,0 +1,8 @@
+import {SvgProps} from '../types'
+export function Pinter({color = 'currentColor', size = '100%'}:SvgProps) {
+return (<svg width={size} height={size} viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
+<path d="M4 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5V8C0.5 7.44772 0.947715 7 1.5 7H14.5C15.0523 7 15.5 7.44772 15.5 8V12.5C15.5 13.0523 15.0523 13.5 14.5 13.5H12.5" stroke={color} strokeLinejoin="round"/>
+<path d="M4 7V1.5C4 0.947715 4.44772 0.5 5 0.5H11.5C12.0523 0.5 12.5 0.947715 12.5 1.5V7" stroke={color} strokeLinejoin="round"/>
+<rect x="4" y="11" width="8.5" height="4.5" stroke={color} strokeLinejoin="round"/>
+
+</svg>)}

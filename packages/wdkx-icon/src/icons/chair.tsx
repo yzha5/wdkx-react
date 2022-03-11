@@ -1,0 +1,6 @@
+import {SvgProps} from '../types'
+export function Chair({color = 'currentColor', size = '100%'}:SvgProps) {
+return (<svg width={size} height={size} viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
+<path d="M14 8H11.5M3 0.5L4 8H5.5M5.5 8H11.5M5.5 8L4.83333 13M11.5 8L12.1667 13M12.5 15.5L12.1667 13M4.5 15.5L4.83333 13M4.83333 13H12.1667" stroke={color} strokeLinejoin="round"/>
+
+</svg>)}

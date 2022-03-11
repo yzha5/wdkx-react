@@ -1,0 +1,15 @@
+import {SvgProps} from '../types'
+export function Android({color = 'currentColor', size = '100%'}:SvgProps) {
+return (<svg width={size} height={size} viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
+<path fillRule="evenodd" clipRule="evenodd" d="M3.49996 6V13C4.99996 13.6667 6.49996 14 7.99996 14C9.49996 14 11 13.6667 12.5 13V6C11 6.66667 9.49996 7 7.99996 7C6.49996 7 4.99996 6.66667 3.49996 6Z" stroke={color} strokeLinejoin="round"/>
+<path fillRule="evenodd" clipRule="evenodd" d="M12.5 5.94829C12.5 3.46301 10.4852 1.44829 7.99996 1.44829C5.51468 1.44829 3.49996 3.46301 3.49996 5.94829C5.49996 6.64943 6.99996 7 7.99996 7C8.99996 7 10.5 6.64943 12.5 5.94829Z" stroke={color} strokeLinejoin="round"/>
+<path d="M3.51721 6.65518C3.51721 6.1029 3.0695 5.65518 2.51721 5.65518C1.96493 5.65518 1.51721 6.1029 1.51721 6.65518V11.1552C1.51721 11.7075 1.96493 12.1552 2.51721 12.1552C3.0695 12.1552 3.51721 11.7075 3.51721 11.1552V6.65518Z" stroke={color} strokeLinejoin="round"/>
+<path d="M14.5172 6.65518C14.5172 6.1029 14.0695 5.65518 13.5172 5.65518C12.9649 5.65518 12.5172 6.1029 12.5172 6.65518V11.1552C12.5172 11.7075 12.9649 12.1552 13.5172 12.1552C14.0695 12.1552 14.5172 11.7075 14.5172 11.1552V6.65518Z" stroke={color} strokeLinejoin="round"/>
+<path d="M6.99996 14V14.5C6.99996 15.0523 6.55224 15.5 5.99996 15.5C5.44768 15.5 4.99996 15.0523 4.99996 14.5V13.5" stroke={color} strokeLinejoin="round"/>
+<path d="M8.99996 14V14.5C8.99996 15.0523 9.44768 15.5 9.99996 15.5C10.5522 15.5 11 15.0523 11 14.5V13.5" stroke={color} strokeLinejoin="round"/>
+<path d="M6.49996 5C6.7761 5 6.99996 4.77614 6.99996 4.5C6.99996 4.22386 6.7761 4 6.49996 4C6.22382 4 5.99996 4.22386 5.99996 4.5C5.99996 4.77614 6.22382 5 6.49996 5Z" stroke={color} strokeLinejoin="round"/>
+<path d="M9.49996 5C9.7761 5 9.99996 4.77614 9.99996 4.5C9.99996 4.22386 9.7761 4 9.49996 4C9.22382 4 8.99996 4.22386 8.99996 4.5C8.99996 4.77614 9.22382 5 9.49996 5Z" stroke={color} strokeLinejoin="round"/>
+<path d="M10.5 2L12 0.5" stroke={color} strokeLinejoin="round"/>
+<path d="M5.49996 2L3.99996 0.5" stroke={color} strokeLinejoin="round"/>
+
+</svg>)}
