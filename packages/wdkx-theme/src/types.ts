@@ -35,4 +35,5 @@ interface Breakpoints {
 interface ZIndex {
     backplate: number
     navbar: number
+    sidebar: number
 }

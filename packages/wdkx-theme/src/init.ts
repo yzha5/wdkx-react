@@ -39,6 +39,7 @@ const theme: Theme = {
     zIndex: {
         backplate: 1000,
         navbar: 800,
+        sidebar: 900,
     },
 }
 
