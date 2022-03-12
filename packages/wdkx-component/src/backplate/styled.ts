@@ -9,7 +9,7 @@ export const StyledBackplate = styled.div<BackplateStyleProps>(
         return {
             label: 'backplate',
             position: 'fixed',
-            overflow: 'auto',
+            overflow: 'hidden',
             width: '100%',
             height: '100%',
             top: 0,

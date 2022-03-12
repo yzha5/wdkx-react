@@ -11,19 +11,19 @@ export default function ({
     ...rest
 }: BackplateProps) {
     //componentDidMount componentDidUpdate
-    useEffect(function () {
-        if (document) {
-            document.documentElement.style.overflow = 'hidden'
-        }
+    // useEffect(function () {
+    //     if (document) {
+    //         document.documentElement.style.overflow = 'hidden'
+    //     }
 
-        //判断是否存在滚动条
-        // if (
-        //     document.body.scrollHeight >
-        //     (window.innerHeight || document.documentElement.clientHeight)
-        // ) {
-        //     document.documentElement.style.paddingRight = `15px`
-        // }
-    })
+    //判断是否存在滚动条
+    // if (
+    //     document.body.scrollHeight >
+    //     (window.innerHeight || document.documentElement.clientHeight)
+    // ) {
+    //     document.documentElement.style.paddingRight = `15px`
+    // }
+    // })
 
     //componentWillUnmount
     // useEffect(function () {
