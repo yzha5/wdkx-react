@@ -53,7 +53,7 @@
     - [ ] `Selector`
     - [ ] `Sidebar`
     - [ ] `Skeleton`
-    - [ ] `Slider`
+    - [x] `Slider`
     - [ ] `Stepper`
     - [ ] `Switch`
     - [ ] `Tab`

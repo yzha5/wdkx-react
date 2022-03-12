@@ -51,7 +51,7 @@
     - [ ] `Rating` 评分
     - [ ] `Segmented` 单/多选组件
     - [ ] `Selector` 选择框
-    - [ ] `Sidebar` 侧边栏
+    - [x] `Sidebar` 侧边栏
     - [ ] `Skeleton` 骨架
     - [ ] `Slider` 滑条
     - [ ] `Stepper` 步骤条
