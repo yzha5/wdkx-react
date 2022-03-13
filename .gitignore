@@ -14,6 +14,7 @@
 
 # nextjs
 **/.next
+packages/wdkx-document/pkg-local
 
 lerna-debug.log
 
