@@ -28,21 +28,22 @@ const StyledLeftSide = styled.div({
 })
 
 const routes = [
-    { label: 'avatar', url: '/components/avatar' },
-    { label: 'backplate', url: '/components/backplate' },
-    { label: 'badge', url: '/components/badge' },
-    { label: 'button', url: '/components/button' },
-    { label: 'container', url: '/components/container' },
-    { label: 'folding', url: '/components/folding' },
-    { label: 'grid', url: '/components/grid' },
-    { label: 'input', url: '/components/input' },
-    { label: 'list', url: '/components/list' },
-    { label: 'navbar', url: '/components/navbar' },
-    { label: 'number field', url: '/components/number-field' },
-    { label: 'sidebar', url: '/components/sidebar' },
-    { label: 'text field', url: '/components/text-field' },
-    { label: 'toolbar', url: '/components/toolbar' },
-    { label: 'view', url: '/components/view' },
+    { label: 'Avatar', url: '/components/avatar' },
+    { label: 'Backplate', url: '/components/backplate' },
+    { label: 'Badge', url: '/components/badge' },
+    { label: 'Button', url: '/components/button' },
+    { label: 'Check', url: '/components/check' },
+    { label: 'Container', url: '/components/container' },
+    { label: 'Folding', url: '/components/folding' },
+    { label: 'Grid', url: '/components/grid' },
+    { label: 'Input', url: '/components/input' },
+    { label: 'List', url: '/components/list' },
+    { label: 'Navbar', url: '/components/navbar' },
+    { label: 'Number field', url: '/components/number-field' },
+    { label: 'Sidebar', url: '/components/sidebar' },
+    { label: 'Text field', url: '/components/text-field' },
+    { label: 'Toolbar', url: '/components/toolbar' },
+    { label: 'View', url: '/components/view' },
 ]
 
 const DocumentLayout: FC = ({ children }) => {
