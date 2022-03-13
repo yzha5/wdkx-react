@@ -41,6 +41,7 @@ const routes = [
     { label: 'Navbar', url: '/components/navbar' },
     { label: 'Number field', url: '/components/number-field' },
     { label: 'Sidebar', url: '/components/sidebar' },
+    { label: 'Switch', url: '/components/switch' },
     { label: 'Text field', url: '/components/text-field' },
     { label: 'Toolbar', url: '/components/toolbar' },
     { label: 'View', url: '/components/view' },

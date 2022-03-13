@@ -55,7 +55,7 @@
     - [ ] `Skeleton`
     - [x] `Slider`
     - [ ] `Stepper`
-    - [ ] `Switch`
+    - [x] `Switch`
     - [ ] `Tab`
     - [ ] `Table`
     - [x] `TextField`

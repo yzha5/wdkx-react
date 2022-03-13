@@ -55,7 +55,7 @@
     - [ ] `Skeleton` 骨架
     - [ ] `Slider` 滑条
     - [ ] `Stepper` 步骤条
-    - [ ] `Switch` 开关
+    - [x] `Switch` 开关
     - [ ] `Tab` 标签
     - [ ] `Table` 表格
     - [x] `TextField` 文本输入框
