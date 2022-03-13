@@ -29,18 +29,20 @@ export default styled.button<ButtonStyleProps>(
             mode === 'filled'
                 ? disabled
                     ? theme.palette.disabled.background
-                    : c.value
+                    : c.toString()
                 : 'unset'
 
         //component text color
         const textColor = disabled
             ? theme.palette.disabled.text
             : mode === 'filled'
-            ? c.text().value
+            ? c.text().toString()
             : 'inherit'
 
         //component border color
-        const borderColor = disabled ? theme.palette.disabled.border : c.value
+        const borderColor = disabled
+            ? theme.palette.disabled.border
+            : c.toString()
 
         //component height
         const height = GeneralComponentSize(size)
@@ -78,14 +80,15 @@ export default styled.button<ButtonStyleProps>(
 
             backgroundColor: bgc,
             color: textColor,
-            boxShadow: shadowed ? ShadowWithColor(c.value!) : undefined, //参数里已经给了颜色默认值，所以c.value不存在undefined的情况，故用感叹号
+            boxShadow: shadowed ? ShadowWithColor(c.toString()!) : undefined, //参数里已经给了颜色默认值，所以c.toString()不存在undefined的情况，故用感叹号
 
             '& svg': {
                 width: icon ? '1.5em' : undefined,
                 height: icon ? '1.5em' : undefined,
             },
             '&>.ripple--container span': {
-                backgroundColor: mode === 'filled' ? c.text().value : c.value,
+                backgroundColor:
+                    mode === 'filled' ? c.text().toString() : c.toString(),
             },
             '&>*:not(.ripple--container):not(:first-of-type)': {
                 marginLeft: `0.5em`,
@@ -95,12 +98,12 @@ export default styled.button<ButtonStyleProps>(
                 backgroundColor: disabled
                     ? undefined
                     : mode === 'filled'
-                    ? c.hover().value
-                    : NewColor(undefined, theme).hover().value,
+                    ? c.hover().toString()
+                    : c.transparent().hover().toString(),
                 color: disabled
                     ? undefined
                     : mode === 'filled'
-                    ? c.hover().text().value
+                    ? c.hover().text().toString()
                     : 'inherit',
             },
         }

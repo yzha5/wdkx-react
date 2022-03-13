@@ -18,13 +18,13 @@ export default styled.input<InputStyleProps>(
             paddingRight: '.5rem',
             width: fluid ? '100%' : undefined,
             borderStyle: 'solid',
-            borderColor: c.value,
+            borderColor: c.toString(),
             borderRadius: `${CalcRadius(radius, 1.5)}rem`,
             '&::placeholder': {
-                color: theme.palette.secondary.lightRatio(0.5).value,
+                color: theme.palette.secondary.lightRatio(0.5).toString(),
             },
             '&:focus': {
-                borderColor: c.active().value,
+                borderColor: c.active().toString(),
             },
             '&:disabled': {
                 cursor: 'not-allowed',

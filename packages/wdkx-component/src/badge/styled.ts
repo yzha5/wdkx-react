@@ -20,8 +20,8 @@ export default styled.span<BadgeStyleProps>(
             lineHeight: `${s}rem`,
             height: `${s}rem`,
             borderRadius: `${CalcRadius('full', s)}rem`,
-            backgroundColor: light ? c.light().value : c.value,
-            color: light ? c.dark().value : c.text().value,
+            backgroundColor: light ? c.light().toString() : c.toString(),
+            color: light ? c.dark().toString() : c.text().toString(),
         }
     }
 )

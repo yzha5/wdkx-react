@@ -15,6 +15,6 @@ export const FieldMessage = styled.div<{
     return {
         label: 'field-message',
         fontSize: '0.75rem',
-        color: disabled ? theme.palette.disabled.text : uiColor.value,
+        color: disabled ? theme.palette.disabled.text : uiColor.toString(),
     }
 })

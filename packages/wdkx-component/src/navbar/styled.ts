@@ -17,10 +17,15 @@ export default styled.nav<NavbarStyleProps>(
             width: '100%',
             transaction: 'all 0.1s',
             position: fixed ? 'fixed' : undefined,
-            backgroundColor: frosted ? ColorFrosted(c.value!) : c.value,
-            color: c.text().value,
+            backgroundColor: color
+                ? frosted
+                    ? ColorFrosted(c.toString()!)
+                    : c.toString()
+                : undefined,
+            color: color ? c.text().toString() : 'inherit',
             backdropFilter: frosted ? FrostValue() : undefined,
             padding: dense ? '0.25rem 1rem' : '0.5rem 1rem',
+            borderBottom: `solid 1px ${c.light().toString()}`,
             boxShadow: shadowed
                 ? theme.palette.scheme === 'light'
                     ? ShadowWithColor('black')

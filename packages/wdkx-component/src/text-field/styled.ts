@@ -33,17 +33,19 @@ export const StyledTextField = styled.label<TextFieldStyleProps>(
             height: `${height}rem`,
             paddingLeft: `${height / 2.5}rem`,
             paddingRight: `${(height * 0.5) / 2.5}rem`,
-            color: disabled ? theme.palette.disabled.text : c.value,
+            color: disabled ? theme.palette.disabled.text : c.toString(),
             backgroundColor: disabled
                 ? theme.palette.disabled.background
                 : undefined,
             borderStyle: 'solid',
             borderWidth: `${(height * 0.0625) / 2.5}rem`,
-            borderColor: disabled ? theme.palette.disabled.border : c.value,
+            borderColor: disabled
+                ? theme.palette.disabled.border
+                : c.toString(),
             borderRadius: `${CalcRadius(radius, height)}rem`,
             boxShadow:
                 !disabled && shadowed && !shadowOnInteract
-                    ? ShadowWithColor(c.value!)
+                    ? ShadowWithColor(c.toString()!)
                     : undefined,
             '&>*:not(:first-of-type)': {
                 marginLeft: '1em',
@@ -61,7 +63,7 @@ export const StyledTextField = styled.label<TextFieldStyleProps>(
                 lineHeight: `${size / 2.5}rem`,
                 color: disabled
                     ? theme.palette.disabled.text
-                    : theme.palette.secondary.value,
+                    : theme.palette.secondary.toString(),
                 userSelect: 'none',
             },
             '& [aria-label=text-field-instance]': {
@@ -78,24 +80,26 @@ export const StyledTextField = styled.label<TextFieldStyleProps>(
                 fontWeight: 500,
                 backgroundColor: 'unset',
                 lineHeight: `1em`,
-                color: disabled ? theme.palette.disabled.text : c.dark().value,
+                color: disabled
+                    ? theme.palette.disabled.text
+                    : c.dark().toString(),
                 fontSize: `${(size * 0.875) / 2.5}rem`,
                 '&::placeholder': {
-                    color: theme.palette.secondary.lightRatio(0.5).value,
+                    color: theme.palette.secondary.lightRatio(0.5).toString(),
                 },
             },
             '&:hover': {
-                borderColor: !disabled ? c.hover().value : undefined,
+                borderColor: !disabled ? c.hover().toString() : undefined,
                 boxShadow:
                     !disabled && shadowed && shadowOnInteract
-                        ? ShadowWithColor(c.value!)
+                        ? ShadowWithColor(c.toString()!)
                         : undefined,
             },
             '&:focus-within': {
-                borderColor: !disabled ? c.active().value : undefined,
+                borderColor: !disabled ? c.active().toString() : undefined,
                 boxShadow:
                     !disabled && shadowed && shadowOnInteract
-                        ? ShadowWithColor(c.value!)
+                        ? ShadowWithColor(c.toString()!)
                         : undefined,
             },
 

@@ -18,6 +18,9 @@ export const StyledList = styled.ul<ListStyleProps>(
                 padding: `${dense ? 0.25 : 0.5}rem 1rem`,
                 borderRadius: `${CalcRadius(radius, 2.5)}rem`,
             },
+            '&>*': {
+                marginTop: '0.25rem',
+            },
         }
     }
 )
@@ -38,31 +41,35 @@ export const StyledListItem = styled.li<ListItemStyleProps>(
             backgroundColor: selected
                 ? disabled
                     ? theme.palette.disabled.background
-                    : c.active().value
+                    : c.active().toString()
                 : undefined,
             color: disabled
                 ? disabledTextColor
                 : selected
-                ? c.active().text().value
+                ? c.active().text().toString()
                 : 'inherit',
             '&>.ripple--container span': {
-                backgroundColor: c.active().text().value,
+                backgroundColor: c.active().toString(),
             },
             '&>*:not(.ripple--container):not(:first-of-type)': {},
             '&:hover': !selected &&
                 !disabled && {
-                    backgroundColor: c.hover().value,
-                    color: c.hover().text().value,
+                    backgroundColor: c.transparent().hover().toString(),
+                    color: c.transparent().hover().text().toString(),
                     '&>div>div>.secondary-text': {
-                        color: c.hover().secondaryText().value,
+                        color: c
+                            .transparent()
+                            .hover()
+                            .secondaryText()
+                            .toString(),
                     },
                 },
             '&>div>div>.secondary-text': {
                 color: disabled
                     ? disabledTextColor
                     : selected
-                    ? c.active().secondaryText().value
-                    : NewColor(undefined, theme).secondaryText().value,
+                    ? c.active().secondaryText().toString()
+                    : NewColor(undefined, theme).secondaryText().toString(),
                 fontSize: '.75rem',
             },
         }
@@ -90,6 +97,6 @@ export const StyledListTitle = styled.li(({ theme }) => {
         fontSize: '1rem',
         fontWeight: 500,
         marginTop: '1rem',
-        color: theme.palette.secondary.lightRatio(0.5).value,
+        color: theme.palette.secondary.lightRatio(0.5).toString(),
     }
 })

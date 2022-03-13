@@ -15,7 +15,9 @@ export const StyledBackplate = styled.div<BackplateStyleProps>(
             top: 0,
             left: 0,
             transaction: 'all 1s ease',
-            backgroundColor: color ? newColor.alpha(alpha).value : undefined,
+            backgroundColor: color
+                ? newColor.alpha(alpha).toString()
+                : undefined,
             backdropFilter: frosted ? FrostValue() : undefined,
             zIndex: theme.zIndex.backplate,
             transition: 'none',

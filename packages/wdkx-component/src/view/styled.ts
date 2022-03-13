@@ -16,8 +16,10 @@ export default styled.div<ViewStyleProps>(
             label: 'view',
             overflow: 'hidden',
             borderRadius: radius ? `${CalcRadius(radius, 2.5)}rem` : undefined,
-            backgroundColor: frosted ? ColorFrosted(c.value!) : c.value,
-            color: color ? c.text().value : undefined,
+            backgroundColor: frosted
+                ? ColorFrosted(c.toString()!)
+                : c.toString(),
+            color: color ? c.text().toString() : undefined,
             backdropFilter: frosted ? FrostValue() : undefined,
             boxShadow: shadowed
                 ? theme.palette.scheme === 'light'
