@@ -3,13 +3,14 @@ import { SwitchStyleProps } from './types'
 import { NewColor } from '@wdkx/theme-react'
 import { CalcRadius, GeneralComponentSize } from '@wdkx/util-react'
 
-export default styled.span<SwitchStyleProps>(
+export default styled.div<SwitchStyleProps>(
     ({ color, size, radius = 'full', disabled, theme }) => {
         const c = NewColor(color, theme)
         const s = GeneralComponentSize(size)
         const r = CalcRadius(radius, s)
         return {
             label: 'switch',
+            display: 'flex',
             position: 'relative',
             overflow: 'hidden',
             width: `${s * 1.8}rem`,
