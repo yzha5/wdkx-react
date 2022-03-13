@@ -1,6 +1,6 @@
 {
     "name": "@wdkx/color",
-    "version": "1.0.1",
+    "version": "2.0.0",
     "description": "Color tool",
     "author": "yzha5 <yzha5@163.com>",
     "homepage": "https://react.weidukexue.com",
@@ -21,7 +21,6 @@
     },
     "scripts": {
         "build": "rm -rf lib && rollup -c",
-        "local:lib": "rm -rf local_lib && mkdir local_lib && cp -r lib local_lib/lib && cp package.json local_lib/package.json",
         "test": "jest",
         "test:coverage": "jest --coverage"
     },

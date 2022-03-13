@@ -1,8 +1,17 @@
-import Color from "color"
+import Color from 'color'
 
 export interface UIColor {
-    readonly value?: string
-    readonly object?: Color
+    toString(): string
+
+    toObject(): Color
+
+    text(): string
+
+    secondaryText(): string
+
+    alpha(ratio: number): UIColor
+
+    transparent(): UIColor
 
     light(): UIColor
 
@@ -14,13 +23,7 @@ export interface UIColor {
 
     grey(): UIColor
 
-    alpha(ratio: number): UIColor
-
     hover(): UIColor
 
     active(): UIColor
-
-    text(): UIColor
-
-    secondaryText(): UIColor
 }
