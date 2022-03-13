@@ -29,7 +29,7 @@
     - [ ] `Calendar` 日历
     - [ ] `Card` 卡片
     - [ ] `Char` 图表
-    - [ ] `Check` 单/复选框
+    - [x] `Check` 单/复选框
     - [ ] `Chip` 纸片
     - [x] `Common` 公众组件
     - [x] `Container` 容器

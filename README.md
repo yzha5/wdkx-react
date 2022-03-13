@@ -29,7 +29,7 @@
     - [ ] `Calendar`
     - [ ] `Card`
     - [ ] `Char`
-    - [ ] `Check`
+    - [x] `Check`
     - [ ] `Chip`
     - [x] `Common`
     - [x] `Container`
