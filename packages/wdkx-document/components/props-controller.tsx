@@ -159,7 +159,9 @@ export function PropsController(): PropsControlItem {
                                         case 'full':
                                             return 'full'
                                         default:
-                                            return Number(v)
+                                            return isNaN(Number(v))
+                                                ? undefined
+                                                : Number(v)
                                     }
                                 })
                             }
