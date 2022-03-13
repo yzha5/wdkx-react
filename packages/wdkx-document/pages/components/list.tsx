@@ -21,7 +21,7 @@ function Preview() {
     const [first, setFirst] = useState(false)
     const [last, setLast] = useState(false)
     const [hasTitle, setHasTitle] = useState(false)
-    const { color, light, selected, disabled } = PropsController()
+    const { color, light, radius, selected, disabled } = PropsController()
 
     const Item = (
         <ListItem
@@ -38,7 +38,7 @@ function Preview() {
         />
     )
     return PreviewTemplate(
-        <List dense={dense}>
+        <List dense={dense} radius={radius.value}>
             {Item}
             {hasTitle && <ListTitle>List title</ListTitle>}
             {Item}
@@ -71,8 +71,10 @@ function Preview() {
                 open={foldingOpen}
                 panelStyle={{ paddingLeft: '1rem' }}
             >
-                {Item}
-                {Item}
+                <List dense={dense} radius={radius.value}>
+                    {Item}
+                    {Item}
+                </List>
             </Folding>
         </List>,
         [
@@ -97,6 +99,7 @@ function Preview() {
                 </td>
             </tr>,
             color.component,
+            radius.component,
             light.component,
             selected.component,
             disabled.component,

@@ -46,6 +46,10 @@ function Preview() {
 
 function Page({ router }: AppProps) {
     const [content, setContent] = useState('')
+    const [show, setShow] = useState(false)
+    const handleBlankClick = (e: MouseEvent<HTMLDivElement>) => {
+        setShow(false)
+    }
     import(`../../i18n/pages/${router.locale}/components/backplate.md`)
         .then((content) => {
             setContent(content.default)

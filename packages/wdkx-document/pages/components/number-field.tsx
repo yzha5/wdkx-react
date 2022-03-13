@@ -2,11 +2,10 @@ import { getDocumentLayout } from '../../layouts/document'
 import { AppProps } from 'next/app'
 import { useState } from 'react'
 import Markdown from '../../components/markdown'
-import { Button, Input, NumberField } from '@wdkx/component-react'
+import { Input, NumberField } from '@wdkx/component-react'
 import Head from 'next/head'
 import { PropsController } from '../../components/props-controller'
 import { PreviewTemplate } from '../../components/preview'
-import { Airplane, Download } from '@wdkx/icon-react'
 
 function Preview() {
     const { color, radius, fluid, shadowed, disabled } = PropsController()

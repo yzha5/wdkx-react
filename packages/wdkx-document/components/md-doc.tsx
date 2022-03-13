@@ -18,7 +18,7 @@ export const MdPre = styled.pre(({ theme }) => {
     return {
         label: 'doc-pre',
         padding: '1rem',
-        backgroundColor: background.value,
+        backgroundColor: background.toString(),
         color: 'white',
         margin: '0',
         '&>code': {
@@ -35,8 +35,8 @@ export const MdCode = styled.code(({ theme }) => {
     const background = theme.palette.secondary.lightRatio(0.6)
     return {
         label: 'doc-code-style',
-        backgroundColor: background.value,
-        color: background.text().value,
+        backgroundColor: background.toString(),
+        color: background.text().toString(),
         padding: '0 0.25rem',
         borderRadius: '0.25rem',
         ...codeCss,
@@ -50,8 +50,8 @@ export const MdBlockquote = styled.blockquote(({ theme }) => {
         label: 'doc-blockquote',
         fontSize: '0.875rem',
         padding: '0.0625rem 0.5rem',
-        color: c.value,
-        borderLeft: `solid 0.5rem ${c.lightRatio(0.5).value}`,
+        color: c.toString(),
+        borderLeft: `solid 0.5rem ${c.lightRatio(0.5).toString()}`,
         margin: '1rem 0',
     }
 })
@@ -65,18 +65,18 @@ export const MdTable = styled.table(({ theme }) => {
         borderCollapse: 'collapse',
         borderStyle: 'hidden',
         '& th': {
-            color: palette.secondary.value,
+            color: palette.secondary.toString(),
         },
         '& th,& td': {
             padding: '0.75rem',
         },
         '&>thead tr': {
-            borderBottom: `solid 1px ${
-                palette.secondary.lightRatio(0.5).value
-            }`,
+            borderBottom: `solid 1px ${palette.secondary
+                .lightRatio(0.5)
+                .toString()}`,
         },
         '&>tbody tr': {
-            borderBottom: `solid 1px ${palette.secondary.light().value}`,
+            borderBottom: `solid 1px ${palette.secondary.light().toString()}`,
         },
         '& td': { fontSize: '0.875rem' },
     }

@@ -5,7 +5,7 @@ import Markdown from '../../components/markdown'
 import Head from 'next/head'
 import { PropsController } from '../../components/props-controller'
 import { PreviewTemplate } from '../../components/preview'
-import { Avatar, Badge, Button, Navbar, Toolbar } from '@wdkx/component-react'
+import { Avatar, Badge, Navbar, Toolbar } from '@wdkx/component-react'
 import { Logo } from '../../components/logo'
 
 function Preview() {
@@ -15,11 +15,12 @@ function Preview() {
     return PreviewTemplate(
         <div
             style={{
-                backgroundColor: 'grey',
                 width: '100%',
                 height: '8rem',
                 overflowY: 'auto',
+                position: 'relative',
             }}
+            className='bg-primary'
         >
             <Navbar
                 color={color.value}

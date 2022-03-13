@@ -44,7 +44,7 @@ function Preview() {
                 >
                     <View style={{ height: 'inherit' }} className='padding-4'>
                         <p>content</p>
-                        <p>contentcontentcontentcontentcontentcontentcontent</p>
+                        <p>long long long long long text</p>
                         <p>content</p>
                         <p>content</p>
                         <button onClick={() => setShow(false)}>close 1</button>

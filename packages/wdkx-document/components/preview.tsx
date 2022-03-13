@@ -3,7 +3,7 @@ import { ReactNode } from 'react'
 
 const PreviewContainer = styled.div(({ theme }) => ({
     display: 'flex',
-    border: `solid 1px ${theme.palette.secondary.lightRatio(0.5).value}`,
+    border: `solid 1px ${theme.palette.secondary.lightRatio(0.5).toString()}`,
     borderRadius: '.5rem',
     overflow: 'hidden',
 }))
@@ -19,7 +19,7 @@ const PreviewBox = styled.div(({ theme }) => ({
 const PreviewControl = styled.div(({ theme }) => ({
     padding: '1rem',
     width: '20rem',
-    backgroundColor: theme.palette.secondary.lightRatio(0.9).value,
+    backgroundColor: theme.palette.secondary.lightRatio(0.9).toString(),
     '& >table': {
         width: '100%',
         borderCollapse: 'collapse',

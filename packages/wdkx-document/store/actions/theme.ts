@@ -4,7 +4,7 @@ import {
     SET_SCHEME,
     SET_SCHEME_TYPE,
 } from './action-types'
-import { DeepPartial } from '@wdkx/types'
+import { DeepPartial } from '@wdkx/types-react'
 import { Palette } from '@wdkx/theme-react' //配色方案
 
 //配色方案

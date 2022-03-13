@@ -52,7 +52,7 @@ function Page({ router }: AppProps) {
         .catch(() => {
             import(
                 `../../i18n/pages/${router.defaultLocale}/components/container.md`
-                )
+            )
                 .then((content) => {
                     setContent(content.default)
                 })

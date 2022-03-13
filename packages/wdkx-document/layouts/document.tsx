@@ -22,7 +22,6 @@ const StyledLeftSide = styled.div({
     position: 'fixed',
     width: '16rem',
     height: 'calc(100vh - 3.5rem)',
-    borderRight: 'solid 1px #eee',
     padding: '1rem',
     overflow: 'auto',
     boxShadow: `0 .5rem 3rem rgba(0,0,0,0.1), 0 .25rem .75rem rgba(0,0,0,0.1)`,
@@ -93,8 +92,8 @@ const DocumentLayout: FC = ({ children }) => {
 
     return (
         <ThemeProvider theme={{ palette: { scheme: scheme } }}>
-            <View>
-                <Navbar color='white' light fixed frosted shadowed>
+            <View style={{ minHeight: '100vh' }}>
+                <Navbar fixed frosted>
                     <Toolbar>
                         <div className='display-flex align-items-center'>
                             <Avatar size='sm'>
@@ -123,7 +122,7 @@ const DocumentLayout: FC = ({ children }) => {
                 <div style={{ height: '3.5rem' }} />
                 <div className='display-flex'>
                     <StyledLeftSide>
-                        <List>
+                        <List radius='bit'>
                             <ListTitle>组件</ListTitle>
                             {routes.map((v, i) => (
                                 <ListItem
@@ -136,7 +135,7 @@ const DocumentLayout: FC = ({ children }) => {
                         </List>
                     </StyledLeftSide>
                     <div style={{ marginLeft: '16rem', width: '100%' }}>
-                        <Container maxWidth='lg'>{children}</Container>
+                        <Container maxWidth='md'>{children}</Container>
                     </div>
                 </div>
             </View>
