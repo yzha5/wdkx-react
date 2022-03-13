@@ -5,7 +5,7 @@ import Markdown from '../../components/markdown'
 import Head from 'next/head'
 import { PropsController } from '../../components/props-controller'
 import { PreviewTemplate } from '../../components/preview'
-import { Avatar, Badge, Navbar, Toolbar } from '@wdkx/component-react'
+import { Avatar, Badge, Navbar, Switch, Toolbar } from '@wdkx/component-react'
 import { Logo } from '../../components/logo'
 
 function Preview() {
@@ -63,8 +63,8 @@ function Preview() {
             <tr key='dense'>
                 <td>dense</td>
                 <td>
-                    <input
-                        type='checkbox'
+                    <Switch
+                        size='xs'
                         onChange={(e) => setDense(e.target.checked)}
                     />
                 </td>
@@ -72,8 +72,8 @@ function Preview() {
             <tr key='fixed'>
                 <td>fixed</td>
                 <td>
-                    <input
-                        type='checkbox'
+                    <Switch
+                        size='xs'
                         onChange={(e) => setFixed(e.target.checked)}
                     />
                 </td>

@@ -6,6 +6,7 @@ import {
     ComponentSize,
 } from '@wdkx/types-react'
 import { Input } from './input'
+import { Switch } from '@wdkx/component-react'
 
 type Bool = {
     value: boolean
@@ -224,8 +225,8 @@ export function PropsController(): PropsControlItem {
                 <tr key='light'>
                     <td>light</td>
                     <td>
-                        <input
-                            type='checkbox'
+                        <Switch
+                            size='xs'
                             checked={light}
                             onChange={(e) => setLight(e.target.checked)}
                         />
@@ -240,8 +241,8 @@ export function PropsController(): PropsControlItem {
                 <tr key='fluid'>
                     <td>fluid</td>
                     <td>
-                        <input
-                            type='checkbox'
+                        <Switch
+                            size='xs'
                             checked={fluid}
                             onChange={(e) => setFluid(e.target.checked)}
                         />
@@ -256,8 +257,8 @@ export function PropsController(): PropsControlItem {
                 <tr key='icon'>
                     <td>icon</td>
                     <td>
-                        <input
-                            type='checkbox'
+                        <Switch
+                            size='xs'
                             checked={icon}
                             onChange={(e) => setIcon(e.target.checked)}
                         />
@@ -272,8 +273,8 @@ export function PropsController(): PropsControlItem {
                 <tr key='shadowed'>
                     <td>shadowed</td>
                     <td>
-                        <input
-                            type='checkbox'
+                        <Switch
+                            size='xs'
                             checked={shadowed}
                             onChange={(e) => setShadowed(e.target.checked)}
                         />
@@ -288,8 +289,8 @@ export function PropsController(): PropsControlItem {
                 <tr key='frosted'>
                     <td>frosted</td>
                     <td>
-                        <input
-                            type='checkbox'
+                        <Switch
+                            size='xs'
                             checked={frosted}
                             onChange={(e) => setFrosted(e.target.checked)}
                         />
@@ -304,8 +305,8 @@ export function PropsController(): PropsControlItem {
                 <tr key='selected'>
                     <td>selected</td>
                     <td>
-                        <input
-                            type='checkbox'
+                        <Switch
+                            size='xs'
                             checked={selected}
                             onChange={(e) => setSelected(e.target.checked)}
                         />
@@ -320,8 +321,8 @@ export function PropsController(): PropsControlItem {
                 <tr key='disabled'>
                     <td>disabled</td>
                     <td>
-                        <input
-                            type='checkbox'
+                        <Switch
+                            size='xs'
                             checked={disabled}
                             onChange={(e) => setDisabled(e.target.checked)}
                         />

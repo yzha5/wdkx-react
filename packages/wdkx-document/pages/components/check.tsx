@@ -6,6 +6,7 @@ import Head from 'next/head'
 import { PropsController } from '../../components/props-controller'
 import { PreviewTemplate } from '../../components/preview'
 import { Check } from '@wdkx/component-react'
+import { Switch } from '@wdkx/component-react'
 
 function Preview() {
     const [isRadio, setIsRadio] = useState(false)
@@ -35,8 +36,8 @@ function Preview() {
             <tr key='is-radio'>
                 <td>radio</td>
                 <td>
-                    <input
-                        type='checkbox'
+                    <Switch
+                        size='xs'
                         checked={isRadio}
                         onChange={(e) => setIsRadio(e.target.checked)}
                     />
@@ -45,8 +46,8 @@ function Preview() {
             <tr key='is-indeterminate'>
                 <td>indeterminate</td>
                 <td>
-                    <input
-                        type='checkbox'
+                    <Switch
+                        size='xs'
                         checked={indeterminate}
                         onChange={(e) => setIndeterminate(e.target.checked)}
                     />

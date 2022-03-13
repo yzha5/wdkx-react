@@ -2,7 +2,7 @@ import { getDocumentLayout } from '../../layouts/document'
 import { AppProps } from 'next/app'
 import { useState } from 'react'
 import Markdown from '../../components/markdown'
-import { Button, Input, TextField } from '@wdkx/component-react'
+import { Button, Input, Switch, TextField } from '@wdkx/component-react'
 import Head from 'next/head'
 import { PropsController } from '../../components/props-controller'
 import { PreviewTemplate } from '../../components/preview'
@@ -59,8 +59,8 @@ function Preview() {
             <tr key='shadow-on-interact'>
                 <td>shadow on interact</td>
                 <td>
-                    <input
-                        type='checkbox'
+                    <Switch
+                        size='xs'
                         checked={shadowOnInteract}
                         onChange={(e) => setShadowOnInteract(e.target.checked)}
                     />

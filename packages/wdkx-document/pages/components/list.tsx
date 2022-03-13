@@ -13,6 +13,7 @@ import {
 import { Airplane, Down, Right } from '@wdkx/icon-react'
 import { PreviewTemplate } from '../../components/preview'
 import { PropsController } from '../../components/props-controller'
+import { Switch } from '@wdkx/component-react'
 
 function Preview() {
     const [foldingOpen, setFoldingOpen] = useState(false)
@@ -81,8 +82,8 @@ function Preview() {
             <tr key='dense'>
                 <td>dense</td>
                 <td>
-                    <input
-                        type='checkbox'
+                    <Switch
+                        size='xs'
                         checked={dense}
                         onChange={(e) => setDense(e.target.checked)}
                     />
@@ -91,8 +92,8 @@ function Preview() {
             <tr key='has-secondary-text'>
                 <td>has secondary text</td>
                 <td>
-                    <input
-                        type='checkbox'
+                    <Switch
+                        size='xs'
                         checked={hasSecond}
                         onChange={(e) => setHasSecond(e.target.checked)}
                     />
@@ -106,8 +107,8 @@ function Preview() {
             <tr key='first-element'>
                 <td>has first element</td>
                 <td>
-                    <input
-                        type='checkbox'
+                    <Switch
+                        size='xs'
                         checked={first}
                         onChange={(e) => setFirst(e.target.checked)}
                     />
@@ -116,8 +117,8 @@ function Preview() {
             <tr key='last-element'>
                 <td>has last element</td>
                 <td>
-                    <input
-                        type='checkbox'
+                    <Switch
+                        size='xs'
                         checked={last}
                         onChange={(e) => setLast(e.target.checked)}
                     />
@@ -126,8 +127,8 @@ function Preview() {
             <tr key='has-title'>
                 <td>has title</td>
                 <td>
-                    <input
-                        type='checkbox'
+                    <Switch
+                        size='xs'
                         checked={hasTitle}
                         onChange={(e) => setHasTitle(e.target.checked)}
                     />

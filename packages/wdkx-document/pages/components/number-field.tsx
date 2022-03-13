@@ -2,7 +2,7 @@ import { getDocumentLayout } from '../../layouts/document'
 import { AppProps } from 'next/app'
 import { useState } from 'react'
 import Markdown from '../../components/markdown'
-import { Input, NumberField } from '@wdkx/component-react'
+import { Input, NumberField, Switch } from '@wdkx/component-react'
 import Head from 'next/head'
 import { PropsController } from '../../components/props-controller'
 import { PreviewTemplate } from '../../components/preview'
@@ -64,8 +64,8 @@ function Preview() {
             <tr key='shadow-on-interact'>
                 <td>shadow on interact</td>
                 <td>
-                    <input
-                        type='checkbox'
+                    <Switch
+                        size='xs'
                         checked={shadowOnInteract}
                         onChange={(e) => setShadowOnInteract(e.target.checked)}
                     />
@@ -75,8 +75,8 @@ function Preview() {
             <tr key='plus disabled'>
                 <td>plus disabled</td>
                 <td>
-                    <input
-                        type='checkbox'
+                    <Switch
+                        size='xs'
                         checked={pd}
                         onChange={(e) => setPd(e.target.checked)}
                     />
@@ -85,8 +85,8 @@ function Preview() {
             <tr key='minus disabled'>
                 <td>minus disabled</td>
                 <td>
-                    <input
-                        type='checkbox'
+                    <Switch
+                        size='xs'
                         checked={md}
                         onChange={(e) => setMd(e.target.checked)}
                     />
