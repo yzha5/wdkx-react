@@ -46,7 +46,7 @@
     - [ ] `Navbar`
     - [x] `NumberField`
     - [ ] `Pagination`
-    - [ ] `Popover`
+    - [x] `Popover`
     - [ ] `Progress`
     - [ ] `Rating`
     - [ ] `Segmented`

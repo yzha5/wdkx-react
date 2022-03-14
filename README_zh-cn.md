@@ -46,7 +46,7 @@
     - [ ] `Navbar` 导航条
     - [x] `NumberField` 数字输入框
     - [ ] `Pagination` 分页
-    - [ ] `Popover` 弹出框
+    - [x] `Popover` 弹出框
     - [ ] `Progress` 进度条
     - [ ] `Rating` 评分
     - [ ] `Segmented` 单/多选组件
