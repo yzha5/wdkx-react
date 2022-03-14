@@ -14,13 +14,12 @@ export const StyledBackplate = styled.div<BackplateStyleProps>(
             height: '100%',
             top: 0,
             left: 0,
-            transaction: 'all 1s ease',
+            transition: 'all 0.2s ease',
             backgroundColor: color
                 ? newColor.alpha(alpha).toString()
                 : undefined,
             backdropFilter: frosted ? FrostValue() : undefined,
             zIndex: theme.zIndex.backplate,
-            transition: 'none',
         }
     }
 )
