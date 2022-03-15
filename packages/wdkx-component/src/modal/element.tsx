@@ -3,23 +3,38 @@ import { ModalProps } from './types'
 import { StyledBackPanel, StyledModalRoot } from './styled'
 import { createPortal } from 'react-dom'
 
-type State = {}
+type State = { show: boolean }
 export default class Modal extends Component<ModalProps, State> {
     constructor(props: ModalProps) {
         super(props)
-        this.state = {}
+        this.state = {
+            show: this.props.show || false,
+        }
     }
 
-    componentDidMount() {
-        document.documentElement.style.overflow = 'hidden'
+    static getDerivedStateFromProps(
+        nextProps: Readonly<ModalProps>,
+        prevState: Readonly<State>
+    ) {
+        if (nextProps.show) {
+            document.documentElement.style.overflow = 'hidden'
+            return {
+                show: true,
+            }
+        } else {
+            document.documentElement.style.removeProperty('overflow')
+            return { show: false }
+        }
     }
-
+    componentWillUnmount() {
+        document.documentElement.style.removeProperty('overflow')
+    }
     render() {
-        const { show, onBlankClick, panel, children, ...rest } = this.props
+        const { onBlankClick, panel, children, ...rest } = this.props
         return (
             <>
                 {children}
-                {show &&
+                {this.state.show &&
                     createPortal(
                         <StyledModalRoot {...rest}>
                             {panel}
