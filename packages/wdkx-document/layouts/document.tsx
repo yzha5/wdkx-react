@@ -17,6 +17,8 @@ import {
 import { Logo } from '../components/logo'
 import { Moon, Sun } from '@wdkx/icon-react'
 import styled from '@emotion/styled'
+import { routesEnUs } from './routes/en-us'
+import { routesZhCn } from './routes/zh-cn'
 
 const StyledLeftSide = styled.div({
     position: 'fixed',
@@ -27,36 +29,19 @@ const StyledLeftSide = styled.div({
     boxShadow: `0 .5rem 3rem rgba(0,0,0,0.1), 0 .25rem .75rem rgba(0,0,0,0.1)`,
 })
 
-const routes = [
-    { label: 'Avatar', url: '/components/avatar' },
-    { label: 'Backplate', url: '/components/backplate' },
-    { label: 'Badge', url: '/components/badge' },
-    { label: 'Button', url: '/components/button' },
-    { label: 'Check', url: '/components/check' },
-    { label: 'Container', url: '/components/container' },
-    { label: 'Folding', url: '/components/folding' },
-    { label: 'Grid', url: '/components/grid' },
-    { label: 'Input', url: '/components/input' },
-    { label: 'List', url: '/components/list' },
-    { label: 'Modal', url: '/components/modal' },
-    { label: 'Navbar', url: '/components/navbar' },
-    { label: 'Number field', url: '/components/number-field' },
-    { label: 'Popup', url: '/components/popup' },
-    // { label: 'Segmented', url: '/components/segmented' },
-    // { label: 'Select', url: '/components/select' },
-    { label: 'Sidebar', url: '/components/sidebar' },
-    { label: 'Switch', url: '/components/switch' },
-    { label: 'Text field', url: '/components/text-field' },
-    { label: 'Toolbar', url: '/components/toolbar' },
-    { label: 'View', url: '/components/view' },
-]
-
 const DocumentLayout: FC = ({ children }) => {
     const [scheme, setScheme] = useState<'light' | 'dark'>('light')
     const { theme } = useAppSelector((theme) => theme)
     const dispatch = useAppDispatch()
     const router = useRouter()
-
+    function routes() {
+        switch (router.locale) {
+            case 'en-us':
+                return routesEnUs
+            default:
+                return routesZhCn
+        }
+    }
     const toggleScheme = () => {
         dispatch(setSchemeAction(scheme !== 'dark'))
         // setScheme(scheme === 'dark' ? 'light' : 'dark')
@@ -130,10 +115,14 @@ const DocumentLayout: FC = ({ children }) => {
                     <StyledLeftSide>
                         <List radius='bit'>
                             <ListTitle>组件</ListTitle>
-                            {routes.map((v, i) => (
+                            {routes().map((v, i) => (
                                 <ListItem
                                     key={i}
-                                    text={v.label}
+                                    text={
+                                        router.locale === 'zh-cn'
+                                            ? `${v.label}(${v.name})`
+                                            : v.label
+                                    }
                                     onClick={() => goto(v.url)}
                                     selected={router.pathname === v.url}
                                 />
