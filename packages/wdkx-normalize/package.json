@@ -1,6 +1,6 @@
 {
     "name": "@wdkx/normalize-react",
-    "version": "1.0.1",
+    "version": "1.0.0-alpha.1",
     "description": "WDKX normal style for react",
     "keywords": [
         "normalize",

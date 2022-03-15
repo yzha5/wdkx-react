@@ -1,6 +1,6 @@
 {
     "name": "@wdkx/template-react",
-    "version": "1.0.1",
+    "version": "1.0.0-alpha.1",
     "description": "WDKX components template for react",
     "keywords": [
         "template"

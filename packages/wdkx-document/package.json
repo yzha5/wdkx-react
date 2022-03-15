@@ -1,6 +1,6 @@
 {
   "name": "@wdkx/document-react",
-  "version": "1.0.1",
+  "version": "1.0.0-alpha.1",
   "author": "yzha5 <yzha5@163.com>",
   "scripts": {
     "dev": "next dev",
@@ -25,10 +25,10 @@
   "dependencies": {
     "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",
-    "@wdkx/component-react": "^1.0.1",
-    "@wdkx/theme-react": "^1.0.1",
-    "@wdkx/types-react": "^1.0.0",
-    "@wdkx/util-react": "^1.0.1",
+    "@wdkx/component-react": "^1.0.0-alpha.1",
+    "@wdkx/theme-react": "^1.0.0-alpha.1",
+    "@wdkx/types-react": "^1.0.0-alpha.1",
+    "@wdkx/util-react": "^1.0.0-alpha.1",
     "markdown-to-jsx": "^7.1.7",
     "next": "^12.1.0",
     "prismjs": "^1.27.0",

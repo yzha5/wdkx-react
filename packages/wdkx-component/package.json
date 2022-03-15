@@ -1,6 +1,6 @@
 {
     "name": "@wdkx/component-react",
-    "version": "1.16.0",
+    "version": "1.0.0-alpha.1",
     "description": "Components library for react",
     "keywords": [
         "library",
@@ -54,8 +54,8 @@
         }
     },
     "dependencies": {
-        "@wdkx/theme-react": "^1.0.1",
-        "@wdkx/types-react": "^1.0.0",
-        "@wdkx/util-react": "^1.0.1"
+        "@wdkx/theme-react": "^1.0.0-alpha.1",
+        "@wdkx/types-react": "^1.0.0-alpha.1",
+        "@wdkx/util-react": "^1.0.0-alpha.1"
     }
 }
