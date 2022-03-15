@@ -30,7 +30,7 @@
     - [ ] `Card`
     - [ ] `Char`
     - [x] `Check`
-    - [ ] `Chip`
+    - [x] `Chip`
     - [x] `Common`
     - [x] `Container`
     - [ ] `DateTimePicker`
@@ -50,7 +50,7 @@
     - [ ] `Progress`
     - [ ] `Rating`
     - [ ] `Segmented`
-    - [ ] `Selector`
+    - [ ] `Select`
     - [ ] `Sidebar`
     - [ ] `Skeleton`
     - [x] `Slider`

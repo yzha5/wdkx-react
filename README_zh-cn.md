@@ -30,7 +30,7 @@
     - [ ] `Card` 卡片
     - [ ] `Char` 图表
     - [x] `Check` 单/复选框
-    - [ ] `Chip` 纸片
+    - [x] `Chip` 纸片
     - [x] `Common` 公众组件
     - [x] `Container` 容器
     - [ ] `DateTimePicker` 日期时间选
@@ -50,7 +50,7 @@
     - [ ] `Progress` 进度条
     - [ ] `Rating` 评分
     - [ ] `Segmented` 单/多选组件
-    - [ ] `Selector` 选择框
+    - [ ] `Select` 选择框
     - [x] `Sidebar` 侧边栏
     - [ ] `Skeleton` 骨架
     - [ ] `Slider` 滑条
