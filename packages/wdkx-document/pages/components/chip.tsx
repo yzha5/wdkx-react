@@ -5,7 +5,7 @@ import Markdown from '../../components/markdown'
 import Head from 'next/head'
 import { PropsController } from '../../components/props-controller'
 import { PreviewTemplate } from '../../components/preview'
-import Chip from '../../pkg-local/chip'
+import { Chip } from '@wdkx/component-react'
 
 function Preview() {
     const { color, light, size } = PropsController()
