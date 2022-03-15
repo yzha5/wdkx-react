@@ -1,4 +1,4 @@
-import { rollupConfig } from '../../command/rollup'
+import { rollupConfig } from '../../rollup'
 import pkg from './package.json'
 
 export default rollupConfig({
