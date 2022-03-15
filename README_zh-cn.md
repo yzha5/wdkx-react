@@ -42,7 +42,7 @@
     - [x] `Input` 输入框
     - [x] `List` 列表
     - [ ] `Loading` 加载
-    - [ ] `Modal` 模态框
+    - [x] `Modal` 模态框
     - [ ] `Navbar` 导航条
     - [x] `NumberField` 数字输入框
     - [ ] `Pagination` 分页

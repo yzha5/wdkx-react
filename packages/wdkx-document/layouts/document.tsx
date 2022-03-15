@@ -38,6 +38,7 @@ const routes = [
     { label: 'Grid', url: '/components/grid' },
     { label: 'Input', url: '/components/input' },
     { label: 'List', url: '/components/list' },
+    { label: 'Modal', url: '/components/modal' },
     { label: 'Navbar', url: '/components/navbar' },
     { label: 'Number field', url: '/components/number-field' },
     { label: 'Popup', url: '/components/popup' },

@@ -42,7 +42,7 @@
     - [x] `Input`
     - [x] `List`
     - [ ] `Loading`
-    - [ ] `Modal`
+    - [x] `Modal`
     - [ ] `Navbar`
     - [x] `NumberField`
     - [ ] `Pagination`
